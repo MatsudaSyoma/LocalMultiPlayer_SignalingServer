@@ -14,6 +14,8 @@ call setup_frontend.bat %*
 @Rem Ensure we have CoTURN available for calling.
 call setup_coturn.bat
 
+call setup_agora.bat
+
 @Rem Move to cirrus.js directory and install its package.json
 pushd %~dp0\..\..\
 call platform_scripts\cmd\node\npm install --no-save

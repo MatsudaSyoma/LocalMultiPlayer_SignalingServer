@@ -6,6 +6,17 @@ const PixelStreamingApplicationStyles =
     new PixelStreamingApplicationStyle();
 PixelStreamingApplicationStyles.applyStyleSheet();
 
+// AgoraRTC の設定
+const APP_ID = "26356e4789c3407caf8e2b3d168d41b5";
+const channelName = "test";
+const uid = Math.floor(Math.random() * 100000);
+
+import AgoraRTC, { ILocalAudioTrack, IRemoteAudioTrack } from "agora-rtc-sdk-ng";
+
+let client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
+let localAudioTrack: ILocalAudioTrack;
+
+
 document.body.onload = function() {
 	// Example of how to set the logger level
 	// Logger.SetLoggerVerbosity(10);
@@ -23,3 +34,18 @@ document.body.onload = function() {
 	// document.getElementById("centrebox").appendChild(application.rootElement);
 	document.body.appendChild(application.rootElement);
 }
+
+// joinVoice を押したときの処理
+document.getElementById("joinVoice")!.onclick = async () => {
+	//const token = await fetch("/token?uid=" + uid).then(r => r.text());
+	const token = await fetch(`http://localhost:3000/token?uid=${uid}`).then(r => r.text());
+	await client.join(APP_ID, channelName, token, uid);
+	localAudioTrack = await AgoraRTC.createMicrophoneAudioTrack();
+	await client.publish([localAudioTrack]);
+};
+client.on("user-published", async (user, mediaType) => {
+	const remoteTrack = await client.subscribe(user, mediaType);
+	if (mediaType === "audio") {
+		(remoteTrack as IRemoteAudioTrack).play();
+	}
+});
