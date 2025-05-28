@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RCI_2\\Documents\\GitHub\\LocalPlayTest\\Samples\\PixelStreaming\\WebServers\\Frontend\\implementations\\typescript\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RCI_2\\Documents\\GitHub\\LocalPlayTest\\Samples\\PixelStreaming\\WebServers\\Frontend\\implementations\\typescript\\src\\player.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:player.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RCI_2\\Documents\\GitHub\\LocalPlayTest\\Samples\\PixelStreaming\\WebServers\\Frontend\\implementations\\typescript\\src\\player.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:player.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{5d51d786-731c-4256-bf95-6a6dd495c7d7}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "player.html",
+              "DocumentMoniker": "C:\\Users\\RCI_2\\Documents\\GitHub\\LocalPlayTest\\Samples\\PixelStreaming\\WebServers\\Frontend\\implementations\\typescript\\src\\player.html",
+              "RelativeDocumentMoniker": "player.html",
+              "ToolTip": "C:\\Users\\RCI_2\\Documents\\GitHub\\LocalPlayTest\\Samples\\PixelStreaming\\WebServers\\Frontend\\implementations\\typescript\\src\\player.html",
+              "RelativeToolTip": "player.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-28T02:01:00.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "player.ts",
+              "DocumentMoniker": "C:\\Users\\RCI_2\\Documents\\GitHub\\LocalPlayTest\\Samples\\PixelStreaming\\WebServers\\Frontend\\implementations\\typescript\\src\\player.ts",
+              "RelativeDocumentMoniker": "player.ts",
+              "ToolTip": "C:\\Users\\RCI_2\\Documents\\GitHub\\LocalPlayTest\\Samples\\PixelStreaming\\WebServers\\Frontend\\implementations\\typescript\\src\\player.ts",
+              "RelativeToolTip": "player.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-28T02:01:02.337Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
