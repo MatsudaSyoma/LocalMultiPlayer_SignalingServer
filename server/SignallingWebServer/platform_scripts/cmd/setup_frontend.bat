@@ -67,6 +67,7 @@
   echo Building Epic Games reference frontend...
   pushd %CD%\Frontend\implementations\typescript
   call ..\..\..\SignallingWebServer\platform_scripts\cmd\node\npm install
+  call ..\..\..\SignallingWebServer\platform_scripts\cmd\node\npm install agora-rtc-sdk-ng
   call ..\..\..\SignallingWebServer\platform_scripts\cmd\node\npm link ../../library ../../ui-library
   call ..\..\..\SignallingWebServer\platform_scripts\cmd\node\npm run build-dev
   popd

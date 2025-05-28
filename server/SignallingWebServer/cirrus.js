@@ -5,6 +5,37 @@
 var express = require('express');
 var app = express();
 
+const { RtcTokenBuilder, RtcRole } = require('agora-access-token');
+
+const APP_ID = "26356e4789c3407caf8e2b3d168d41b5";
+const APP_CERTIFICATE = "9009d8c5f3d8450e9c6d9d352238f46d"; // Agora Console ‚ÅŠm”F
+
+app.get('/agora-token', (req, res) => {
+	const channelName = req.query.channelName;
+	const uid = req.query.uid;
+
+	if (!channelName || !uid) {
+		return res.status(400).json({ error: 'channelName and uid are required' });
+	}
+
+	const role = RtcRole.PUBLISHER;
+	const expireTimeInSeconds = 3600;
+	const currentTimestamp = Math.floor(Date.now() / 1000);
+	const privilegeExpireTs = currentTimestamp + expireTimeInSeconds;
+
+	const token = RtcTokenBuilder.buildTokenWithUid(
+		APP_ID,
+		APP_CERTIFICATE,
+		channelName,
+		parseInt(uid),
+		role,
+		privilegeExpireTs
+	);
+
+	res.json({ token });
+});
+
+
 const fs = require('fs');
 const path = require('path');
 const querystring = require('querystring');
